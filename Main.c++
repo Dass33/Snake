@@ -1,4 +1,4 @@
-#include <iostream>
+#include <cstdlib>
 #include <ncurses.h>
 #include <chrono>
 #include <thread>
@@ -13,7 +13,7 @@ int tailX[100], tailY[100];
 int nTail;
 enum eDirecton { STOP = 0, LEFT, RIGHT, UP, DOWN };
 eDirecton dir;
-const int GameSpeed;
+const int GameSpeed = 100;
 
 void Setup() {
     initscr(); // Initialize ncurses
